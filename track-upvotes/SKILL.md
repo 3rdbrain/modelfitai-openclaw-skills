@@ -8,22 +8,24 @@ keywords: [openclaw, skill, product-hunt, launch, tracking, upvotes, growth]
 requires: {}
 ---
 
-# Product Hunt Upvote Tracker Skill
+# Product Hunt Launch Tracker
 
-Track your Product Hunt launch performance.
+Monitor your Product Hunt launch in real-time — upvotes, rank, comments, and hourly trends. No API key needed.
 
-## Available Tools
+## Commands
 
 Run with Node.js: `node {baseDir}/track-upvotes.js <command> [args]`
 
-- **track** — Start tracking a Product Hunt post
-- **status** — Get current upvote count and ranking
-- **report** — Generate a performance summary
+- **check `<url>`** — Get current upvotes, rank, and comments
+- **trend `<url>`** — Get current stats + trend vs last check
 
 ## Usage
 
 ```bash
-node {baseDir}/track-upvotes.js track <product_hunt_url>
-node {baseDir}/track-upvotes.js status
-node {baseDir}/track-upvotes.js report
+node {baseDir}/track-upvotes.js check https://www.producthunt.com/posts/your-product
+node {baseDir}/track-upvotes.js trend https://www.producthunt.com/posts/your-product
 ```
+
+## No API Key Required
+
+Reads the public Product Hunt page directly. Nothing to configure — just pass your product URL.
