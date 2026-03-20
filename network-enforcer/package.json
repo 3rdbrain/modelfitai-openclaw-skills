@@ -1,0 +1,19 @@
+{
+  "name": "@modelfitai/network-enforcer",
+  "version": "1.0.0",
+  "description": "Enforce iptables network isolation between Docker containers — blocks inter-container traffic and restricts outbound connections to approved hosts only.",
+  "keywords": ["openclaw", "skill", "docker", "iptables", "network", "isolation", "security", "vps"],
+  "author": "ModelFitAI <skills@modelfitai.com>",
+  "license": "MIT",
+  "homepage": "https://modelfitai.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/modelfitai/openclaw-skills"
+  },
+  "main": "network-enforcer.js",
+  "engines": { "node": ">=18" },
+  "openclaw": {
+    "skill": true,
+    "requires": {}
+  }
+}

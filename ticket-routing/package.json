@@ -1,0 +1,20 @@
+{
+  "name": "@modelfitai/ticket-routing",
+  "version": "1.0.0",
+  "description": "Auto-categorize customer support tickets by priority and sentiment, route to the right queue, and manage resolution status.",
+  "keywords": ["openclaw", "skill", "customer-support", "tickets", "routing", "helpdesk"],
+  "author": "ModelFitAI <skills@modelfitai.com>",
+  "license": "MIT",
+  "homepage": "https://modelfitai.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/modelfitai/openclaw-skills"
+  },
+  "main": "ticket-routing.js",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "openclaw": {
+    "skill": true,
+    "requires": {}
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@modelfitai/health-reporter",
+  "version": "1.0.0",
+  "description": "Generate daily VPS health reports — disk usage, memory, load average, and container status — delivered via Telegram with actionable recommendations.",
+  "keywords": ["openclaw", "skill", "docker", "health", "reporting", "vps", "monitoring", "telegram"],
+  "author": "ModelFitAI <skills@modelfitai.com>",
+  "license": "MIT",
+  "homepage": "https://modelfitai.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/modelfitai/openclaw-skills"
+  },
+  "main": "health-reporter.js",
+  "engines": { "node": ">=18" },
+  "openclaw": {
+    "skill": true,
+    "requires": {
+      "env": ["TELEGRAM_BOT_TOKEN", "TELEGRAM_CHAT_ID"]
+    }
+  }
+}
